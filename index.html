@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-12">
                    <button class="btn btn-primary" @click="generateemail()">genera lista e-mail</button>
-                   <ul class="list-unstyled">
+                   <ul class="list-unstyled" v-if="random_email.length == 10">
                     <li v-for="(email, index) in  random_email">{{email}}</li>
                    </ul>
                 </div>
