@@ -8,7 +8,7 @@
     <title>lista e-email</title>
 </head>
 <body>
-      <div class="app">
+      <div id="app">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -21,7 +21,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-
+                   <button class="btn btn-primary" @click="generateemail()">genera lista e-mail</button>
+                   <ul class="list-unstyled">
+                    <li v-for="(email, index) in  random_email">{{email}}</li>
+                   </ul>
                 </div>
             </div>
         </div>
